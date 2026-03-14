@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1976d2;
+  --primary-dark: #1565c0;
+  --primary-light: #e3f2fd;
+  --secondary: #388e3c;
+  --danger: #d32f2f;
+  --warning: #f57c00;
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --border: #e0e0e0;
+  --text: #212121;
+  --text-secondary: #757575;
+  --shadow: 0 2px 8px rgba(0,0,0,0.10);
+  --radius: 8px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.3;
+}
